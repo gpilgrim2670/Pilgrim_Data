@@ -1,0 +1,49 @@
+Place	Order	Name	School	Prelims_Time	Semis_Time	Finals_Time	Event
+1	4	Olivia Lynch	Powell Olentangy Liberty	181.80	299.95	428.55	Girls 1m Diving
+2	17	Sarah Krusinski	Cincinnati Mount Notre Dame	182.85	275.95	398.65
+3	22	Madeline Lutzko	Medina Highland	170.40	276.05	388.05
+4	6	Mallory Hanna	Cincinnati Ursuline Academy	187.85	278.60	377.75
+5	9	Riley Bullock	Loveland	159.80	250.10	376.50
+6	12	Julia Fidanza	Upper Arlington	171.80	270.95	376.40
+7	10	Grace Ellis	Whitehouse Anthony Wayne	158.05	259.50	374.30
+8	8	Amanda Socha	Avon	168.15	275.25	374.00
+9	14	Langley Petersen	Mason	155.05	259.60	358.25
+10	24	Tara Fitzgerald	Solon	153.25	254.60	354.95
+11	13	Marissa Kurinsky	Canton McKinley	160.85	259.20	344.50
+12	19	Ali Asbury	Cincinnati Turpin	159.55	252.00	344.05
+13	1	Emma Skinner	New Albany	163.85	248.95	340.95
+14	3	Abby Wilkov	Solon	168.20	256.60	336.30
+15	5	Taylor Peterson	Green	160.65	251.85	335.40
+16	7	Erica Ebel	Normandy	169.30	250.75	319.15
+17	11	Clara Dearden	Cincinnati Walnut Hills	158.95	248.30	Cut
+18	15	Maria Meinhardt	Cincinnati St. Ursula	151.45	243.55	Cut
+19	20	Maggie Micko	Strongsville	157.90	238.65	Cut
+20	16	Alex Ludgate	Solon	156.80	236.15	Cut
+21	23	Karina Ashton	Mason	147.90	Cut
+22	18	Bethany Mercer	Solon	138.20	Cut
+23	21	Alexa Walkovich	Sylvania Southview	131.10	Cut
+24	2	Ashleigh Provan	Gahanna Lincoln	Cut
+1	13	Noah Duperre	New Albany	255.40	409.60	582.85	Boys 1m Diving
+2	11	Jackson Salisbury	Solon	205.10	296.45	451.50
+3	12	Hayden Apel	Hilliard Darby	182.80	272.65	414.85
+4	23	Sam Sulek	Delaware Hayes	204.10	309.95	414.05
+5	8	Anthony Scuilli	Powell Olentangy Liberty	183.00	295.10	410.75
+6	4	Samuel Hool	Talawanda	177.80	288.30	401.00
+7	16	Patrick Burke	Solon	168.95	274.05	380.10
+8	24	Josh Schwartz	Solon	185.75	287.20	378.70
+9	2	Michael Slaughter	Avon Lake	174.00	265.70	375.10
+10	7	Zach Schering	Massillon Jackson	170.20	253.85	370.15
+11	20	Owen Recker	Perrysburg	187.45	270.80	362.90
+12	17	Gavin Osterday	Cincinnati Archbishop Moeller	174.35	251.40	356.85
+13	6	George Peuhl	Sylvania Northview	185.00	266.80	353.30
+14	9	Luke Faulisi	Euclid	176.95	244.15	347.15
+15	5	Ben Cutforth	Cincinnati St. Xavier	148.30	233.25	335.40
+16	3	Eli Humeniuk	Sylvania Northview	174.00	248.80	333.00
+17	15	Preston Landolt	Cincinnati Sycamore	139.90	228.45	Cut
+18	10	Ethan Belak	Amherst Steele High School	139.25	222.10	Cut
+19	14	William Behimer Cincinnati St. Xavier	143.45	218.00	Cut
+20	1	Ethan Moore	Cincinnati Walnut Hills	145.65	215.75	Cut
+21	19	Micheal Boothman	Powell Olentangy Liberty	136.75	Cut
+22	22	Hunter Trautmann	Hudson	132.50	Cut
+23	18	Mark Sulek	Delaware Hayes	132.45	Cut
+24	21	Will Claus	Cleveland St. Ignatius	60.40	Cut
