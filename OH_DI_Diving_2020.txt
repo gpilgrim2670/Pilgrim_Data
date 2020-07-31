@@ -1,5 +1,5 @@
 Place	Order	Name	School	Prelims_Time	Semis_Time	Finals_Time	Event
-1	4	Olivia Lynch	Powell Olentangy Liberty	181.80	299.95	428.55	Girls 1m Diving
+1	4	Olivia Lynch	Powell Olentangy Liberty	181.80	299.95	428.55	Girls 1 mtr Diving
 2	17	Sarah Krusinski	Cincinnati Mount Notre Dame	182.85	275.95	398.65
 3	22	Madeline Lutzko	Medina Highland	170.40	276.05	388.05
 4	6	Mallory Hanna	Cincinnati Ursuline Academy	187.85	278.60	377.75
@@ -23,7 +23,7 @@ Place	Order	Name	School	Prelims_Time	Semis_Time	Finals_Time	Event
 22	18	Bethany Mercer	Solon	138.20	Cut
 23	21	Alexa Walkovich	Sylvania Southview	131.10	Cut
 24	2	Ashleigh Provan	Gahanna Lincoln	Cut
-1	13	Noah Duperre	New Albany	255.40	409.60	582.85	Boys 1m Diving
+1	13	Noah Duperre	New Albany	255.40	409.60	582.85	Boys 1 mtr Diving
 2	11	Jackson Salisbury	Solon	205.10	296.45	451.50
 3	12	Hayden Apel	Hilliard Darby	182.80	272.65	414.85
 4	23	Sam Sulek	Delaware Hayes	204.10	309.95	414.05
