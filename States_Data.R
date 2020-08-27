@@ -114,7 +114,9 @@ PA_Results <- PA_Results %>%
     Gender = str_split_fixed(Source, "_", n = 3)[, 2],
     Division = str_split_fixed(Source, "_", n = 3)[, 3],
   ) %>%
-  select(-Source)
+  select(-Source) %>% 
+  mutate(Name = str_to_title(Name),
+         School = str_to_title(School))
 
 write.csv(PA_Results, "PA_States_2020.csv")
 
