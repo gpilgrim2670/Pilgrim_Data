@@ -56,7 +56,8 @@ event_numbers <- str_pad(event_numbers, width = 2, side = "left", pad = "0") # a
 CA_Links <- paste0(base, event_numbers, ".htm") # paste together base urls and sequence of numbers (with leading zeroes as needed)
 
 CA_Results <- map(CA_Links, read_results, node = "pre") %>% # map SwimmeR::read_results over the list of links
-  map(swim_parse) %>% 
+  map(swim_parse, typo = c("Martinez-Spence", "Morales-Osterga"),
+      replacement = c("Martinez, Spence", "Morales, Osterga")) %>% 
   bind_rows() %>% # bind together results from each link
   # select(Name, School, Finals_Time, Event) %>% # only the columns we need
   mutate(State = "CA") # add column for state since we'll be combining results with GA
