@@ -26,7 +26,7 @@ TX_Results_6A <-
   bind_rows() %>% # bind together results from each link
   # select(Name, School, Finals_Time, Event) %>% # only the columns we need
   mutate(State = "TX",
-         Division = "6A") # add column for state since we'll be combining results with OH
+         Division = "6A")# add column for state since we'll be combining results with OH
 
 base_5A <-
   "https://www.uiltexas.org/tournament-results/swimming-diving/2020/5a/200214F0"
@@ -66,6 +66,7 @@ CA_Results <- CA_Results %>%
                            TRUE ~ Grade),
          School = case_when(is.na(Grade) == TRUE & str_detect(School, Grade) == TRUE ~ str_remove(School, Grade),
                             TRUE ~ School),
+         School = str_remove(School, "^Sr |^Jr |^So |^Fr "),
          Grade = str_to_upper(Grade),
          School = trimws(School))
 
@@ -215,7 +216,14 @@ OH_DI_Diving <-
 Ohio_DII_Link <-
   "https://ohsaaweb.blob.core.windows.net/files/Sports/Swimming-Diving/2019-20/State%20Tournament/Division%20II/2020DivisionIISwimmingFinalsResults.pdf"
 
-OH_DII <- swim_parse(read_results(Ohio_DII_Link))
+OH_DII_raw <- read_results(Ohio_DII_Link)
+
+OH_DII <- swim_parse(read_results(Ohio_DII_Link),
+                     typo = c("SR  ", "JR  ", "SO  ", "FR  ", " q "),
+                     replacement = c("SR ", "JR ", "SO ", "FR ", ""),
+                     avoid = c("State Tour\\:",
+                               "State Record\\:",
+                               "Pool\\:"))
 
 OH_Results <- bind_rows(OH_DI, OH_DII, OH_DI_Diving) %>%
   mutate(State = "OH",
