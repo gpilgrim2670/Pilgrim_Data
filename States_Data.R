@@ -47,11 +47,11 @@ TX_Results_5A <-
 
 TX_Results <- bind_rows(TX_Results_5A, TX_Results_6A)
 
-write.csv(TX_Results, "TX_States_2020.csv")
+write.csv(TX_Results, "TX_States_2020.csv", row.names = FALSE)
 
 #### California
 base <- "http://www.results.teamunify.com/clov/2019/CIFSTATEMEET/190510F0" # base url
-event_numbers <- 1:24 # sequence of numbers, total of 24 evetns across boys and girls
+event_numbers <- 1:24 # sequence of numbers, total of 24 events across boys and girls
 event_numbers <- str_pad(event_numbers, width = 2, side = "left", pad = "0") # add leading zeros to single digit numbers
 CA_Links <- paste0(base, event_numbers, ".htm") # paste together base urls and sequence of numbers (with leading zeroes as needed)
 
@@ -71,7 +71,7 @@ CA_Results <- CA_Results %>%
          Grade = str_to_upper(Grade),
          School = trimws(School))
 
-write.csv(CA_Results, "CA_States_2019.csv")
+write.csv(CA_Results, "CA_States_2019.csv", row.names = FALSE)
 
 
 #### NY ####
@@ -93,7 +93,7 @@ NY_Results <- NY_Results %>%
   ) %>%
   select(-Source)
 
-write.csv(NY_Results, "NY_States_2020.csv")
+write.csv(NY_Results, "NY_States_2020.csv", row.names = FALSE)
 
 #### PA ######
 PA_Boys_3A <- "http://www.paswimming.com/19_20/results/state/PIAA_3_A_boys_states_Results.htm"
@@ -120,7 +120,7 @@ PA_Results <- PA_Results %>%
   mutate(Name = str_to_title(Name),
          School = str_to_title(School))
 
-write.csv(PA_Results, "PA_States_2020.csv")
+write.csv(PA_Results, "PA_States_2020.csv", row.names = FALSE)
 
 #### Florida ####
 base_4A <- "https://www.fhsaa.org/sites/default/files/orig_uploads/sports/swimming-diving/archives/2019-20/state/4A/191115F0"
@@ -151,7 +151,7 @@ FL_Results <-
   bind_rows(.id = "Division") %>% 
   mutate(State = "FL")
 
-write.csv(FL_Results, "FL_States_2020.csv")
+write.csv(FL_Results, "FL_States_2020.csv", row.names = FALSE)
 
 #### Illinois ####
 IL_Boys_Link <- "https://www.ihsa.org/archive/swb/2019-20/StateResults.pdf"
@@ -167,10 +167,10 @@ IL_Results <-
     swim_parse,
     avoid = c("IHSA", "NFHS", "POOL", "NATIONAL"),
     typo = c(      "\\s+(\\d{1,2})\\s{2,}",
-                   "Sr ",
-                   "Jr ",
-                   "So ",
-                   "Fr ",
+                   "Sr\\s{2,}",
+                   "Jr\\s{2,}",
+                   "So\\s{2,}",
+                   "Fr\\s{2,}",
                    "Waubonsie   Valley",
                    "\\s{1,}\\("),
     replacement = c(      "\\1 ",
@@ -184,7 +184,16 @@ IL_Results <-
   bind_rows() %>% # bind together results from each link
   mutate(State = "IL")
 
-write.csv(IL_Results, "IL_States_2020.csv")
+IL_Results <- IL_Results %>% 
+  mutate(Grade = case_when(is.na(Grade) == TRUE & str_detect(School, "^Fr|^So|^Jr|^Sr") == TRUE ~ str_extract(School, "^Fr|^So|^Jr|^Sr"),
+                           TRUE ~ Grade),
+         School = case_when(is.na(Grade) == TRUE & str_detect(School, Grade) == TRUE ~ str_remove(School, Grade),
+                            TRUE ~ School),
+         School = str_remove(School, "^Sr |^Jr |^So |^Fr "),
+         Grade = str_to_upper(Grade),
+         School = trimws(School))
+
+write.csv(IL_Results, "IL_States_2020.csv", row.names = FALSE)
 
 
 #### Ohio
@@ -202,7 +211,10 @@ OH_DI <- swim_parse(
   replacement = c("SR ",
                   "JR ",
                   "SO ",
-                  "FR ")
+                  "FR "),
+  avoid = c("Tour\\:",
+            "Record\\:",
+            "Pool\\:")
 )
 
 OH_DI_Diving_Link <-
@@ -220,8 +232,8 @@ Ohio_DII_Link <-
 OH_DII_raw <- read_results(Ohio_DII_Link)
 
 OH_DII <- swim_parse(read_results(Ohio_DII_Link),
-                     typo = c("SR  ", "JR  ", "SO  ", "FR  ", " q "),
-                     replacement = c("SR ", "JR ", "SO ", "FR ", ""),
+                     typo = c("SR\\s{2,}", "JR\\s{2,}", "SO\\s{2,}", "FR\\s{2,}", " q ", "(\\d{1,2})\\s{1,}([:alpha:])"),
+                     replacement = c("SR ", "JR ", "SO ", "FR ", "", "\\1 \\2"),
                      avoid = c("State Tour\\:",
                                "State Record\\:",
                                "Pool\\:"))
@@ -236,4 +248,4 @@ OH_Results <- bind_rows(OH_DI, OH_DII, OH_DI_Diving) %>%
          str_detect(School, "@") == FALSE,
          str_detect(School, "Record:") == FALSE)
 
-write.csv(OH_Results, "OH_States_2020.csv")
+write.csv(OH_Results, "OH_States_2020.csv", row.names = FALSE)
