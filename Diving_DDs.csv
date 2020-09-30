@@ -1,0 +1,199 @@
+Number,Name,A,B,C,D,Board
+101,Forward Dive,1.4,1.3,1.2,,1m
+102,Forward Somersault,1.6,1.5,1.4,,1m
+103,Forward 1.5 Somersaults,2,1.7,1.6,,1m
+104,Forward 2 Somersaults,2.6,2.3,2.2,,1m
+105,Forward 2.5 Somersaults,,2.6,2.4,,1m
+106,Forward 3 Somersaults,,3.2,2.9,,1m
+107,Forward 3.5 Somersaults,,3.3,3,,1m
+108,Forward 4 Somersaults,,,4,,1m
+109,Forward 4.5 Somersaults,,,4.3,,1m
+112,Forward Flying Somersault,,1.7,1.6,,1m
+113,Forward Flying 1.5 Somersaults,,1.9,1.8,,1m
+115,Forward Flying 2.5 Somersaults,,,,,1m
+101,Forward Dive,1.6,1.5,1.4,,3m
+102,Forward Somersault,1.7,1.6,1.5,,3m
+103,Forward 1.5 Somersaults,1.9,1.6,1.5,,3m
+104,Forward 2 Somersaults,2.4,2.1,2,,3m
+105,Forward 2.5 Somersaults,2.8,2.4,2.2,,3m
+106,Forward 3 Somersaults,,2.8,2.5,,3m
+107,Forward 3.5 Somersaults,,3.1,2.8,,3m
+108,Forward 4 Somersaults,,3.8,3.4,,3m
+109,Forward 4.5 Somersaults,,4.2,3.8,,3m
+112,Forward Flying Somersault,,1.8,1.7,,3m
+113,Forward Flying 1.5 Somersaults,,1.8,1.7,,3m
+115,Forward Flying 2.5 Somersaults,,2.7,2.5,,3m
+201,Back Dive,1.7,1.6,1.5,,1m
+202,Back Somersault,1.7,1.6,1.5,,1m
+203,Back 1.5 Somersaults,2.5,2.3,2,,1m
+204,Back 2 Somersaults,,2.5,2.2,,1m
+205,Back 2.5 Somersaults,,3.2,3,,1m
+206,Back 3 Somersaults,,3.2,2.9,,1m
+207,Back 3.5 Somersaults,,,,,1m
+208,Back 4 Somersaults,,,,,1m
+209,Back 4.5 Somersaults,,,,,1m
+212,Back Flying Somersault,,1.7,1.6,,1m
+213,Back Flying 1.5 Somersaults,,,,,1m
+215,Back Flying 2.5 Somersaults,,,,,1m
+201,Back Dive,1.9,1.8,1.7,,3m
+202,Back Somersault,1.8,1.7,1.6,,3m
+203,Back 1.5 Somersaults,2.4,2.2,1.9,,3m
+204,Back 2 Somersaults,2.5,2.3,2,,3m
+205,Back 2.5 Somersaults,,3,2.8,,3m
+206,Back 3 Somersaults,,2.8,2.5,,3m
+207,Back 3.5 Somersaults,,3.9,3.6,,3m
+208,Back 4 Somersaults,,3.7,3.4,,3m
+209,Back 4.5 Somersaults,,4.7,4.4,,3m
+212,Back Flying Somersault,,1.8,1.7,,3m
+213,Back Flying 1.5 Somersaults,,2.4,2.1,,3m
+215,Back Flying 2.5 Somersaults,,3.3,3.1,,3m
+301,Reverse Dive,1.8,1.7,1.6,,1m
+302,Reverse Somersault,1.8,1.7,1.6,,1m
+303,Reverse 1.5 Somersaults,2.7,2.4,2.1,,1m
+304,Reverse 2 Somersaults,2.9,2.6,2.3,,1m
+305,Reverse 2.5 Somersaults,,3.2,30,,1m
+306,Reverse 3 Somersaults,,3.3,3,,1m
+307,Reverse 3.5 Somersaults,,,,,1m
+308,Reverse 4 Somersaults,,,,,1m
+309,Reverse 4.5 Somersaults,,,,,1m
+312,Reverse Flying Somersault,,1.8,1.7,,1m
+313,Reverse Flying 1.5 Somersaults,,2.6,2.3,,1m
+301,Reverse Dive,2,1.9,1.8,,3m
+302,Reverse Somersault,1.9,1.8,1.7,,3m
+303,Reverse 1.5 Somersaults,2.6,2.3,2,,3m
+304,Reverse 2 Somersaults,2.7,2.4,2.1,,3m
+305,Reverse 2.5 Somersaults,3.4,3,2.8,,3m
+306,Reverse 3 Somersaults,,2.9,2.6,,3m
+307,Reverse 3.5 Somersaults,,3.8,3.5,,3m
+308,Reverse 4 Somersaults,,3.7,3.4,,3m
+309,Reverse 4.5 Somersaults,,4.7,4.4,,3m
+312,Reverse Flying Somersault,,1.9,1.8,,3m
+313,Reverse Flying 1.5 Somersaults,,2.5,2.2,,3m
+401,Inward Dive,1.8,1.5,1.4,,1m
+402,Inward Somersault,2,1.7,1.6,,1m
+403,Inward 1.5 Somersaults,,2.4,2.2,,1m
+404,Inward 2 Somersaults,,3,2.8,,1m
+405,Inward 2.5 Somersaults,,3.4,3.1,,1m
+407,Inward 3.5 Somersaults,,,,,1m
+409,Inward 4.5 Somersaults,,,,,1m
+412,Inward Flying Somersault,,2.1,2,,1m
+413,Inward Flying 1.5 Somersaults,,2.9,2.7,,1m
+401,Inward Dive,1.7,1.4,1.3,,3m
+402,Inward Somersault,1.8,1.5,1.4,,3m
+403,Inward 1.5 Somersaults,,2.1,1.9,,3m
+404,Inward 2 Somersaults,,2.6,2.4,,3m
+405,Inward 2.5 Somersaults,,3,2.7,,3m
+407,Inward 3.5 Somersaults,,3.7,3.4,,3m
+409,Inward 4.5 Somersaults,,4.6,4.2,,3m
+412,Inward Flying Somersault,,1.9,1.8,,3m
+413,Inward Flying 1.5 Somersaults,,2.6,2.4,,3m
+5111,Forward Dive 0.5 Twist,1.8,1.7,1.6,,1m
+5112,Forward Dive 1 Twist,2,1.9,,,1m
+5121,Forward Somersault 0.5 Twist,,,,1.7,1m
+5122,Forward Somersault 1 Twist,,,,1.9,1m
+5124,Forward Somersault 2 Twists,,,,2.3,1m
+5126,Forward Somersault 3 Twists,,,,2.8,1m
+5131,Forward 1.5 Somersaults 0.5 Twist,,,,2,1m
+5132,Forward 1.5 Somersaults 1 Twist,,,,2.2,1m
+5134,Forward 1.5 Somersaults 2 Twists,,,,2.6,1m
+5136,Forward 1.5 Somersaults 3 Twists,,,,3.1,1m
+5138,Forward 1.5 Somersaults 4 Twists,,,,3.5,1m
+5151,Forward 2.5 Somersaults 0.5 Twist,,3,2.8,,1m
+5152,Forward 2.5 Somersaults 1 Twist,,3.2,3,,1m
+5154,Forward 2.5 Somersaults 2 Twists,,3.6,3.4,,1m
+5156,Forward 2.5 Somersaults 3 Twists,,,,,1m
+5172,Forward 3.5 Somersaults 1 Twist,,,,,1m
+5211,Back Dive 0.5 Twist,1.8,1.7,1.6,,1m
+5212,Back Dive 1 Twist,2,,,,1m
+5221,Back Somersault 0.5 Twist,,,,1.7,1m
+5222,Back Somersault 1 Twist,,,,1.9,1m
+5223,Back Somersault 1.5 Twists,,,,2.3,1m
+5225,Back Somersault 2.5 Twists,,,,2.7,1m
+5227,Back Somersault 3.5 Twists,,,,3.2,1m
+5231,Back 1.5 Somersaults 0.5 Twist,,,,2.1,1m
+5233,Back 1.5 Somersaults 1.5 Twists,,,,2.5,1m
+5235,Back 1.5 Somersaults 2.5 Twists,,,,2.9,1m
+5237,Back 1.5 Somersaults 3.5 Twists,,,,,1m
+5239,Back 1.5 Somersaults 4.5 Twists,,,,,1m
+5251,Back 2.5 Somersaults 0.5 Twist,,2.9,2.7,,1m
+5253,Back 2.5 Somersaults 1.5 Twists,,,,,1m
+5255,Back 2.5 Somersaults 2.5 Twists,,,,,1m
+5311,Reverse Dive 0.5 Twist,1.9,1.8,1.7,,1m
+5312,Reverse Dive 1 Twist,2.1,,,,1m
+5321,Reverse Somersault 0.5 Twist,,,,1.8,1m
+5322,Reverse Somersault 1 Twist,,,,2,1m
+5323,Reverse Somersault 1.5 Twists,,,,2.4,1m
+5325,Reverse Somersault 2.5 Twists,,,,2.8,1m
+5331,Reverse 1.5 Somersaults 0.5 Twist,,,,2.2,1m
+5333,Reverse 1.5 Somersaults 1.5 Twists,,,,2.6,1m
+5335,Reverse 1.5 Somersaults 2.5 Twists,,,,3,1m
+5337,Reverse 1.5 Somersaults 3.5 Twists,,,,3.6,1m
+5339,Reverse 1.5 Somersaults 4.5 Twists,,,,,1m
+5351,Reverse 2.5 Somersaults 0.5 Twist,,2.9,2.7,,1m
+5353,Reverse 2.5 Somersaults 1.5 Twists,,3.5,3.3,,1m
+5355,Reverse 2.5 Somersaults 2.5 Twists,,3.9,3.7,,1m
+5371,Reverse 3.5 Somersaults 0.5 Twist,,,,,1m
+5373,Reverse 3.5 Somersaults 1.5 Twists,,,,,1m
+5375,Reverse 3.5 Somersaults 2 .5 Twists,,,,,1m
+5411,Inward Dive 0.5 Twist,2,1.7,1.6,,1m
+5412,Inward Dive 1 Twist,2.2,1.9,1.8,,1m
+5421,Inward Somersault 0.5 Twist,,,,1.9,1m
+5422,Inward Somersault 1 Twist,,,,2.1,1m
+5432,Inward 1.5 Somersaults 1 Twist,,,,2.7,1m
+5434,Inward 1.5 Somersaults 2 Twists,,,,3.1,1m
+5436,Inward 1.5 Somersaults 3 Twists,,,,,1m
+5111,Forward Dive 0.5 Twist,2,1.9,1.8,,3m
+5112,Forward Dive 1 Twist,2.2,2.1,,,3m
+5121,Forward Somersault 0.5 Twist,,,,1.8,3m
+5122,Forward Somersault 1 Twist,,,,2,3m
+5124,Forward Somersault 2 Twists,,,,2.4,3m
+5126,Forward Somersault 3 Twists,,,,2.9,3m
+5131,Forward 1.5 Somersaults 0.5 Twist,,,,1.9,3m
+5132,Forward 1.5 Somersaults 1 Twist,,,,2.1,3m
+5134,Forward 1.5 Somersaults 2 Twists,,,,2.5,3m
+5136,Forward 1.5 Somersaults 3 Twists,,,,3,3m
+5138,Forward 1.5 Somersaults 4 Twists,,,,3.4,3m
+5151,Forward 2.5 Somersaults 0.5 Twist,,2.8,2.6,,3m
+5152,Forward 2.5 Somersaults 1 Twist,,3,2.8,,3m
+5154,Forward 2.5 Somersaults 2 Twists,,3.4,3.2,,3m
+5156,Forward 2.5 Somersaults 3 Twists,,3.9,3.7,,3m
+5172,Forward 3.5 Somersaults 1 Twist,,3.7,3.4,,3m
+5211,Back Dive 0.5 Twist,2,1.9,1.8,,3m
+5212,Back Dive 1 Twist,2.2,,,,3m
+5221,Back Somersault 0.5 Twist,,,,1.8,3m
+5222,Back Somersault 1 Twist,,,,2,3m
+5223,Back Somersault 1.5 Twists,,,,2.4,3m
+5225,Back Somersault 2.5 Twists,,,,2.8,3m
+5227,Back Somersault 3.5 Twists,,,,3.3,3m
+5231,Back 1.5 Somersaults 0.5 Twist,,,,2,3m
+5233,Back 1.5 Somersaults 1.5 Twists,,,,2.4,3m
+5235,Back 1.5 Somersaults 2.5 Twists,,,,2.8,3m
+5237,Back 1.5 Somersaults 3.5 Twists,,,,3.3,3m
+5239,Back 1.5 Somersaults 4.5 Twists,,,,3.7,3m
+5251,Back 2.5 Somersaults 0.5 Twist,,,,,3m
+5253,Back 2.5 Somersaults 1.5 Twists,,,,,3m
+5255,Back 2.5 Somersaults 2.5 Twists,,,,,3m
+5311,Reverse Dive 0.5 Twist,2.1,2,1.9,,3m
+5312,Reverse Dive 1 Twist,2.3,,,,3m
+5321,Reverse Somersault 0.5 Twist,,,,1.9,3m
+5322,Reverse Somersault 1 Twist,,,,2.1,3m
+5323,Reverse Somersault 1.5 Twists,,,,2.5,3m
+5325,Reverse Somersault 2.5 Twists,,,,2.9,3m
+5331,Reverse 1.5 Somersaults 0.5 Twist,,,,2.1,3m
+5333,Reverse 1.5 Somersaults 1.5 Twists,,,,2.5,3m
+5335,Reverse 1.5 Somersaults 2.5 Twists,,,,2.9,3m
+5337,Reverse 1.5 Somersaults 3.5 Twists,,,,3.5,3m
+5339,Reverse 1.5 Somersaults 4.5 Twists,,,,3.8,3m
+5351,Reverse 2.5 Somersaults 0.5 Twist,,2.7,2.5,,3m
+5353,Reverse 2.5 Somersaults 1.5 Twists,,3.3,3.1,,3m
+5355,Reverse 2.5 Somersaults 2.5 Twists,,3.7,3.5,,3m
+5371,Reverse 3.5 Somersaults 0.5 Twist,,3.4,3.1,,3m
+5373,Reverse 3.5 Somersaults 1.5 Twists,,,3.7,,3m
+5375,Reverse 3.5 Somersaults 2 .5 Twists,,,4.1,,3m
+5411,Inward Dive 0.5 Twist,1.9,1.6,1.5,,3m
+5412,Inward Dive 1 Twist,2.1,1.8,1.7,,3m
+5421,Inward Somersault 0.5 Twist,,,,1.7,3m
+5422,Inward Somersault 1 Twist,,,,1.9,3m
+5432,Inward 1.5 Somersaults 1 Twist,,,,2.4,3m
+5434,Inward 1.5 Somersaults 2 Twists,,,,2.8,3m
+5436,Inward 1.5 Somersaults 3 Twists,,,,3.5,3m
