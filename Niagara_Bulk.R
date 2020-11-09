@@ -42,7 +42,7 @@ Niagara_2018_2019 <-
   map(
     clean_results,
     safely(Swim_Parse, otherwise = NA),
-    typo = c("Greater Rochester Area YMCA --NI")
+    typo = c("Greater Rochester Area YMCA --NI"),
     replacement = c("Greater Rochester Area YMCA-NI"),
     splits = TRUE
   )
@@ -52,4 +52,7 @@ Niagara_2018_2019 <- discard_errors(Niagara_2018_2019)
 Niagara_2018_2019 <- data.table::rbindlist(Niagara_2018_2019, use.names = TRUE, idcol = "Source", fill = TRUE)
 
 Niagara_2018_2019  <- Niagara_2018_2019  %>%
-  mutate(Source = str_remove(Source, "\\.result\\.result"))
+  mutate(Source = str_remove(Source, "\\.result\\.result")) %>% 
+  mutate(Age = as.numeric(Grade)) %>% 
+  select(Source, Place, Name, Age, everything()) %>% 
+  select(-Grade)
