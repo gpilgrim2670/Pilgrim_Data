@@ -4,6 +4,7 @@ library(purrr)
 library(dplyr)
 library(stringr)
 
+
 links_scrape <- function(url, node = "span a") {
   pg <- read_html(url)
   # pg <- read_html("https://www.teamunify.com/team/eznslsc/page/times/2018-2019-results")
@@ -39,8 +40,7 @@ discard_errors <- function(results) {
 
 clean_results <- discard_errors(raw_results)
 
-Niagara_2018_2019_2 <-
-  map(
+Niagara_2018_2019_2 <- map(
     clean_results,
     safely(Swim_Parse, otherwise = NA),
     typo = c(
@@ -66,8 +66,7 @@ Niagara_2018_2019_2 <-
       "DQ",
       "",
       "PENINSULA WAVE RIDERS SWIMMING  "
-    )
-  )
+    ))
 
 Niagara_2018_2019 <- discard_errors(Niagara_2018_2019)
 
@@ -140,5 +139,3 @@ Niagara_2018_2019 %>%
   # filter(str_detect(Name, "Kadlecik")) %>% 
   # group_by(Name) %>% 
   # summarise(No_Swim = n())
-  
-

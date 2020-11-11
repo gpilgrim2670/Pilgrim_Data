@@ -90,10 +90,6 @@ links_all <- c(links_boys, links_boys_states, links_girls, links_girls_states)
 
 Raw_Results <- map(links_all, safely(Read_Results, otherwise = NA), node = "pre")
 
-
-
-# Raw_Results_Test <- Raw_Results
-
 # Raw_Results_Test_Names <- map(Raw_Results_Test, ~{names(.) <-  links_all; .})
 
 # Raw_Results_Test <- Raw_Results
@@ -114,7 +110,6 @@ discard_errors <- function(results) {
 }
 
 Clean_Results <- discard_errors(Raw_Results)
-
 
 # read_with_progress <- function(filename){
 #   pb$tick()$print()
