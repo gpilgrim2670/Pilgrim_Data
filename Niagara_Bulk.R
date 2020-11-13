@@ -40,7 +40,7 @@ discard_errors <- function(results) {
 
 clean_results <- discard_errors(raw_results)
 
-Niagara_2018_2019_2 <- map(
+Niagara_2018_2019 <- map(
     clean_results,
     safely(Swim_Parse, otherwise = NA),
     typo = c(
