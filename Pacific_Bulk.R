@@ -61,7 +61,8 @@ PAC_2020 <- map(
     "DQ",
     "DQ",
     ""
-  ))
+  ),
+  splits = TRUE)
 
 PC_errors <- return_errors(PAC_2020)
 # PC_errors[8] is interesting as something that should almost work
