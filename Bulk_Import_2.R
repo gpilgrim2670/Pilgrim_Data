@@ -86,7 +86,11 @@ links_girls <- unlist(map(section_list_girls, links_scrape_section))
 links_girls_states <- links_scrape_states("http://www.swimdata.info/NYState/MeetResultsRepository.nsf/Sec4Girls.xsp")
 
 #### All Results ####
-links_all <- c(links_boys, links_boys_states, links_girls, links_girls_states)
+links_all <-
+  c(links_boys,
+    links_boys_states)
+    # links_girls,
+    # links_girls_states)
 
 Raw_Results <- map(links_all, safely(Read_Results, otherwise = NA), node = "pre")
 
@@ -127,6 +131,7 @@ Full_Results <-
     Clean_Results,
     safely(Swim_Parse, otherwise = NA),
     splits = TRUE,
+    relay_swimmers = TRUE,
     typo = c(
       "Greece  Athena",
       "  [A-Z]  ",
@@ -155,7 +160,9 @@ Full_Results <-
       "Sugrue_Neuendorf,",
       "dos Santos-Ilker,",
       "Finkelman-Mahoney,",
-      "(?<=[:alpha:]) (?=[:digit:])"
+      "(?<=[:alpha:]) (?=[:digit:])",
+      "Crane, Brian\\s{1,}A",
+      "Kenneth Stein\\s{1,}IV"
     ),
     replacement = c(
       "Greece Athena",
@@ -185,16 +192,17 @@ Full_Results <-
       "Sugrue, Neuendorf",
       "Dos Santos-Ilker",
       "Finkelman, Mahoney",
-      "   "
+      "   ",
+      "Crane, Brian A",
+      "Kenneth Stein IV"
     )
   )
 
-Full_Results <- discard_errors(Full_Results)
+Full_Results_2 <- discard_errors(Full_Results)
 
-Full_Results_2 <- data.table::rbindlist(Full_Results, use.names = TRUE, idcol = "Source", fill = TRUE)
+Full_Results_2 <- data.table::rbindlist(Full_Results_2, use.names = TRUE, idcol = "Source", fill = TRUE)
 
-Full_Results_4  <- Full_Results_2  %>%
-
+Full_Results_2  <- Full_Results_2  %>%
   mutate(
     Meet = case_when(
       str_detect(Source, "nyhsswim") == TRUE ~ paste("States", str_extract(Source, "\\d{4}"), sep = " "),
@@ -208,7 +216,36 @@ Full_Results_4  <- Full_Results_2  %>%
     Meet = str_replace(Meet, " Single.htm.result", ""),
     Source = str_remove(Source, "\\.result\\.result"))
 
-write.csv(Full_Results_3, file = "Full_NYS_Results_11062020_2.csv", row.names = FALSE)
-saveRDS(Raw_Results, file = "Raw_NYS_Results_11062020.rds")
+saveRDS(Full_Results_2, file = "NYS_Boys_Results_12022020.rds")
+# saveRDS(Raw_Results, file = "Raw_NYS_Results_11062020.rds")
 
-
+df <-
+  swim_parse(
+    read_results("http://www.nyhsswim.com/Results/Boys/2001/NYS/Single.htm"),
+    typo = c(
+      "Byram H/Valhalla/W Lake",
+      "Ardley/Hastings/Wdlds -",
+      "John Jay CrossRiver - S",
+      "Plattsburgh - Section 7",
+      "Comsewogue - Section 11",
+      "Burnt Hills - Section 2",
+      "- Section \\d{0,2}",
+      " ?- ?Sectio",
+      " - Chsaa",
+      "- Chs",
+      " ?- ?Sec"
+    ),
+    replacement = c(
+      "Byram H/Valhalla/W Lake  ",
+      "Ardley/Hastings/Wdlds  ",
+      "John Jay CrossRiver  ",
+      "Plattsburgh  ",
+      "Comsewogue  ",
+     "Burnt Hills  ",
+     "  ",
+     "  ",
+     "  ",
+     "  ",
+     "  "
+    )
+  )
